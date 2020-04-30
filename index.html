@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Halva Povidlo</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark nav-cera-style fixed-top" style="background-color: #000000">
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav nav-pills navbar-nav mr-auto pull-left">
+			<li class="nav-item">
+				<a class="navbar-brand" data-toggle="pill" href="#homePage">СТЕНА КРИНЖА</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" data-toggle="pill" href="#decsPage">DECS</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="pill" href="#quotesPage">Quotes</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" target="_blank"
+				   href="https://docs.google.com/spreadsheets/d/1yRudNo3YMm-FTTJRNJHcPCKBpUdC1URSZsjPNvfhff4/edit?usp=sharing">
+					Таблица с фильмами</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="tab-content main-navigation" style="padding: 20px;">
+	<div class="tab-pane fade fade show active active" id="homePage" style="margin-top: 50px;">
+		<div class="gallery" id="wallGallery">
+
+		</div>
+	</div>
+
+	<div class="tab-pane fade" id="quotesPage" style="margin-top: 50px;">
+		<blockquote class="blockquote">
+			<p id="allQuotes" class="mb-0"></p>
+		</blockquote>
+	</div>
+</div>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/index.js"></script>
+
+<script>
+	$(
+		$('[data-toggle="popover"]').popover()
+	)
+</script>
+<script>
+	$('.popover-dismiss').popover({
+		trigger: 'focus'
+	})
+</script>
+</body>
+
+</html>
