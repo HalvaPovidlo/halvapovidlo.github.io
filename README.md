@@ -1,2 +1,6 @@
-# website
-Official website
+# Как добавить
+## Цитату
+Добавить цитату в файл quotes
+## Картинку
+1. Добавить имя в файл *wallImagesList*
+2. И картинку в папку */wallImages* 
