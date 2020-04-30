@@ -37,7 +37,14 @@ function showAllImages(imageList, id) {
                 			//var image = document.createElement("img", {class : "img-fluid", src : "wallImages/" + list[i]});
                 			var image = document.createElement("img");
                 			image.setAttribute("class", "img-fluid");
+                			if (list[i].startsWith("http"))
+                			{
+                			image.setAttribute("src", list[i]);
+                			}
+                			else
+                			{
                 			image.setAttribute("src", "wallImages/" + list[i]);
+                			}
                 			gallery.appendChild(div);
                 			div.appendChild(image);
                 	}

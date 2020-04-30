@@ -2,5 +2,6 @@
 ## Цитату
 Добавить цитату в файл quotes
 ## Картинку
-1. Добавить имя в файл *wallImagesList*
-2. И картинку в папку */wallImages* 
+- Добавить url в файл *wallImagesList*
+- Добавить картинку в папку */wallImages*
+    2. И имя в файл *wallImagesList*
