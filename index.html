@@ -1,50 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Halva Povidlo</title>
+    <meta charset="UTF-8">
+    <title>Halva Povidlo</title>
 
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.css">
-	<link rel="stylesheet" href="css/bootstrap-reboot.css">
-	<link rel="stylesheet" href="css/gallery.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark nav-cera-style fixed-top" style="background-color: #000000">
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="nav nav-pills navbar-nav mr-auto pull-left">
-			<li class="nav-item">
-				<a class="navbar-brand" data-toggle="pill" href="#homePage">СТЕНА КРИНЖА</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link disabled" data-toggle="pill" href="#decsPage">DECS</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="pill" href="#quotesPage">Quotes</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" target="_blank"
-				   href="https://docs.google.com/spreadsheets/d/1yRudNo3YMm-FTTJRNJHcPCKBpUdC1URSZsjPNvfhff4/edit?usp=sharing">
-					Таблица с фильмами</a>
-			</li>
-		</ul>
-	</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills navbar-nav mr-auto pull-left">
+            <li class="nav-item">
+                <a class="navbar-brand" data-toggle="pill" href="#homePage">H&P</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" data-toggle="pill" href="#decsPage">DECS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#cringePage">СТЕНА КРИНЖА</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#quotesPage">Quotes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#ludocontestPage">LudikContest</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank"
+                   href="https://docs.google.com/spreadsheets/d/1yRudNo3YMm-FTTJRNJHcPCKBpUdC1URSZsjPNvfhff4/edit?usp=sharing">
+                    Таблица с фильмами</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <div class="tab-content main-navigation" style="padding: 20px;">
-	<div class="tab-pane fade fade show active active" id="homePage" style="margin-top: 50px;">
-		<div class="gallery" id="wallGallery">
+    <div class="tab-pane fade fade show active active" id="homePage" style="margin-top: 50px;">
+        <div style="text-align: center;">
+            <h1 class="mb-0" id="commandName">Halva Povidlo</h1>
+            <img class="img-fluid" src="1XXjB6A4GsM.jpg">
+        </div>
+    </div>
 
-		</div>
-	</div>
+    <div class="tab-pane fade" id="cringePage" style="margin-top: 50px;">
+        <div class="gallery" id="wallGallery">
+        </div>
+    </div>
 
-	<div class="tab-pane fade" id="quotesPage" style="margin-top: 50px;">
-		<blockquote class="blockquote">
-			<p id="allQuotes" class="mb-0"></p>
-		</blockquote>
-	</div>
+    <div class="tab-pane fade" id="quotesPage" style="margin-top: 50px;">
+        <blockquote class="blockquote">
+            <p id="allQuotes" class="mb-0"></p>
+        </blockquote>
+    </div>
+
+    <div class="tab-pane fade" id="ludocontestPage" style="margin-top: 50px;">
+        <h1>Ludik Contest</h1>
+        <h4>Main goal</h4>
+        <p class="lead">Road to 100k of total bank</p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar" role="progressbar" id="progressBar" style="width: 50%;" aria-valuenow="25"
+                 aria-valuemin="0" aria-valuemax="100">50%
+            </div>
+            <p></p>
+        </div>
+
+        <h4>Leaderboard</h4>
+
+        <table class="table table-dark">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">who</th>
+                <th scope="col">bank</th>
+                <th scope="col">diff</th>
+            </tr>
+            </thead>
+            <tbody id="contestLeaderboard">
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <script src="js/bootstrap.js"></script>
@@ -52,14 +91,14 @@
 <script src="js/index.js"></script>
 
 <script>
-	$(
-		$('[data-toggle="popover"]').popover()
-	)
+    $(
+        $('[data-toggle="popover"]').popover()
+    )
 </script>
 <script>
-	$('.popover-dismiss').popover({
-		trigger: 'focus'
-	})
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    })
 </script>
 </body>
 
